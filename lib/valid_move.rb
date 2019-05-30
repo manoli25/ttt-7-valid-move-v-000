@@ -1,9 +1,12 @@
 def valid_move?(board, index_number)
   if index_number.between?(0,8) && position_taken?(board,index_number) == false
     return true
-  else index_number.between?(0,8) && position_taken?(board,index_number) == true
+  elsif index_number.between?(0,8) && position_taken?(board,index_number) == true
     return true
-  end
+  elsif index_number.between?(0,8) && position_taken?(board,index_number) == false
+    return false
+  elsif index_number.between?(0,8) && position_taken?(board,index_number) == false
+    return false
 end
 
 
