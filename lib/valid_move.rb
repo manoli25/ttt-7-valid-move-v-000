@@ -1,5 +1,11 @@
 def valid_move?(board, index_number)
+  if index_number.between?(0,8) && position_taken? == false
+    return true
+  else index_number.between?(0,8) && position_taken? == true
+    return true
+  end
 end
+
 
 
 def position_taken?(board, index_number)
