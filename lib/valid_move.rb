@@ -12,7 +12,7 @@ def valid_move?(board, index_number)
   end
 end
 
-    
+
 
 
 
